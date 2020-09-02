@@ -1,0 +1,565 @@
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #252835;
+}
+
+h1 {
+  font-size: 72px;
+}
+
+h2 {
+  font-size: 52px;
+}
+
+h3 {
+  font-size: 42px;
+}
+
+.section-header {
+  margin: 0 0 50px 0;
+  text-transform: uppercase;
+  text-align: center !important;
+}
+
+h4 {
+  font-size: 32px;
+}
+
+h5 {
+  font-size: 22px;
+}
+
+img {
+  width: 100%;
+}
+
+iframe {
+  display: block;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1300px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.hero {
+  background-color: #e2efff;
+  width: 100%;
+  min-height: 500px;
+  background-image: url("https://2k4cv830lzuh3w6ee5vl4f94-wpengine.netdna-ssl.com/wp-content/uploads/2019/08/learn-french-on-skype.png");
+  background-position: right;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.hero img {
+  max-width: 20%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.hero .text {
+  width: 50%;
+  min-height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.hero .text h3 {
+  font-size: 34px;
+}
+
+.sections {
+  min-height: 300px;
+  padding: 5% 0;
+  position: relative;
+}
+
+/* == SECTION 1 == */
+/* -- Why Us -- */
+.why-us {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.why-us .box {
+  width: 15%;
+}
+
+.why-us .box img {
+  display: block;
+  margin: 0 auto;
+  width: 60%;
+}
+
+.why-us .box .header {
+  border: 1px solid #d6d61973;
+  background-color: #f5f571;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 900;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.why-us .box .description {
+  font-size: 18px;
+  text-align: center;
+}
+
+/* == SECTION 2 == */
+.section2-bg {
+  background-image: url("https://images.pexels.com/photos/956999/milky-way-starry-sky-night-sky-star-956999.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+}
+
+/* -- Courses -- */
+.courses {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  position: relative;
+}
+
+.courses .box {
+  border: 1px solid white;
+  background-color: white;
+  -webkit-box-shadow: 2px 2px 8px 3px #e6e6e6;
+          box-shadow: 2px 2px 8px 3px #e6e6e6;
+  width: 20%;
+  margin: 0 0 9% 0;
+}
+
+.courses .box img {
+  display: block;
+  margin: 20px auto;
+  width: 40%;
+}
+
+.courses .box .header {
+  border: 1px solid #d6d61973;
+  background-color: #f5f571;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 900;
+  color: #252835;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.courses .box .description {
+  font-size: 18px;
+  text-align: center;
+}
+
+.know-more-btn {
+  background-color: #d11b1b;
+  border-radius: 30px;
+  font-size: 36px;
+  color: #cccccc;
+  padding: 10px 40px;
+  position: absolute;
+  bottom: -20px;
+  -webkit-animation-name: know-more-btn;
+          animation-name: know-more-btn;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+  font-weight: 900;
+}
+
+.know-more-btn:hover {
+  -webkit-box-shadow: 1px 1px 5px 5px rgba(255, 255, 255, 0.75);
+          box-shadow: 1px 1px 5px 5px rgba(255, 255, 255, 0.75);
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+  -webkit-transition: 300ms;
+  transition: 300ms;
+  color: #fff;
+}
+
+@-webkit-keyframes know-more-btn {
+  0% {
+    background-color: #8d0000;
+  }
+  25% {
+    background-color: #7e0006;
+  }
+  50% {
+    background-color: #550000;
+  }
+  100% {
+    background-color: #2e0000;
+  }
+}
+
+@keyframes know-more-btn {
+  0% {
+    background-color: #8d0000;
+  }
+  25% {
+    background-color: #7e0006;
+  }
+  50% {
+    background-color: #550000;
+  }
+  100% {
+    background-color: #2e0000;
+  }
+}
+
+/* == SECTION 3 == */
+/* == SECTION 4 == */
+.section4-bg {
+  background-color: #252835;
+  color: #fff;
+}
+
+/* -- Steps -- */
+.steps {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  position: relative;
+}
+
+.steps .box {
+  border: 1px solid white;
+  background-color: white;
+  -webkit-box-shadow: 1px 1px 5px 1px #e6e6e6;
+          box-shadow: 1px 1px 5px 1px #e6e6e6;
+  width: 20%;
+  margin: 0 0 9% 0;
+}
+
+.steps .box img {
+  display: block;
+  margin: 15px auto;
+  width: 30%;
+}
+
+.steps .box .header {
+  border: 1px solid #d6d61973;
+  background-color: #f5f571;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 900;
+  color: #252835;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.steps .box .description {
+  margin: 15px 0 0 0;
+  font-size: 18px;
+  text-align: center;
+  color: #252835;
+  padding: 5px 20px;
+}
+
+.steps .box:hover {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+  -webkit-transition: 300ms;
+  transition: 300ms;
+  cursor: pointer;
+}
+
+.steps-btn {
+  background-color: #d11b1b;
+  border-radius: 30px;
+  font-size: 36px;
+  color: #cccccc;
+  padding: 10px 40px;
+  position: absolute;
+  bottom: -20px;
+  -webkit-animation-name: steps-btn;
+          animation-name: steps-btn;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+  font-weight: 900;
+}
+
+.steps-btn:hover {
+  -webkit-box-shadow: 1px 1px 5px 5px rgba(255, 255, 255, 0.75);
+          box-shadow: 1px 1px 5px 5px rgba(255, 255, 255, 0.75);
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+  -webkit-transition: 300ms;
+  transition: 300ms;
+  color: #fff;
+}
+
+@-webkit-keyframes steps-btn {
+  0% {
+    background-color: #8d0000;
+  }
+  25% {
+    background-color: #7e0006;
+  }
+  50% {
+    background-color: #550000;
+  }
+  100% {
+    background-color: #2e0000;
+  }
+}
+
+@keyframes steps-btn {
+  0% {
+    background-color: #8d0000;
+  }
+  25% {
+    background-color: #7e0006;
+  }
+  50% {
+    background-color: #550000;
+  }
+  100% {
+    background-color: #2e0000;
+  }
+}
+
+/* == SECTION 5 == */
+.section5-bg {
+  background-color: #e2efff;
+  min-height: 709px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact-us {
+  text-align: center;
+}
+
+.contact-us img {
+  width: 10%;
+}
+
+.contact-us h1 {
+  position: relative;
+}
+
+/* ~~~~~~~~~~ Courses Page ~~~~~~~~~~ */
+nav {
+  background-color: #f5f571;
+  -webkit-box-shadow: 1px 1px 6px 1px #25283593;
+          box-shadow: 1px 1px 6px 1px #25283593;
+  width: 100%;
+  height: 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+nav a {
+  background-color: #252835;
+  color: #ffffff;
+  font-size: 22px;
+  padding: 10px 18px;
+  font-weight: 900;
+}
+
+nav a:hover {
+  background-color: #060c25;
+  color: yellow;
+}
+
+nav a::before {
+  content: '<- ';
+}
+
+.detailed-courses {
+  margin: 10% 0 0 0;
+  min-height: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.detailed-courses .box {
+  border: 1px solid #000;
+  width: 100%;
+  margin: 0 auto 7% auto;
+  position: relative;
+}
+
+.detailed-courses .box h2 {
+  padding: 5px 20px;
+}
+
+.detailed-courses .box p {
+  border-top: 3px dotted #252835;
+  font-size: 26px;
+  font-weight: 500;
+  padding: 40px 20px;
+  text-align: justify;
+}
+
+.detailed-courses .box h4 {
+  padding: 5px 20px;
+}
+
+.detailed-courses .box .eng-lvls {
+  width: 60%;
+  margin: 1% auto 3% auto;
+}
+
+.detailed-courses .box img {
+  border: 1px solid #252835;
+  display: block;
+  margin: 1% auto 7% auto;
+  width: 90%;
+}
+
+.detailed-courses-btn {
+  background-color: #d11b1b;
+  border-radius: 30px;
+  font-size: 26px;
+  color: #cccccc;
+  padding: 10px 40px;
+  position: absolute;
+  bottom: 1%;
+  right: 4%;
+  -webkit-animation-name: detailed-courses-btn;
+          animation-name: detailed-courses-btn;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+  font-weight: 900;
+}
+
+.detailed-courses-btn:hover {
+  -webkit-box-shadow: 1px 1px 5px 5px rgba(255, 255, 255, 0.75);
+          box-shadow: 1px 1px 5px 5px rgba(255, 255, 255, 0.75);
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+  -webkit-transition: 300ms;
+  transition: 300ms;
+  color: #fff;
+}
+
+@-webkit-keyframes detailed-courses-btn {
+  0% {
+    background-color: #8d0000;
+  }
+  25% {
+    background-color: #7e0006;
+  }
+  50% {
+    background-color: #550000;
+  }
+  100% {
+    background-color: #2e0000;
+  }
+}
+
+@keyframes detailed-courses-btn {
+  0% {
+    background-color: #8d0000;
+  }
+  25% {
+    background-color: #7e0006;
+  }
+  50% {
+    background-color: #550000;
+  }
+  100% {
+    background-color: #2e0000;
+  }
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #e4e4e4;
+  width: 100%;
+  font-size: 22px;
+  font-weight: 700;
+  min-height: 90px;
+  text-align: center;
+  position: relative;
+}
+
+footer img {
+  width: 10%;
+  position: absolute;
+  bottom: 15px;
+  right: 0;
+}
+/*# sourceMappingURL=main.css.map */
