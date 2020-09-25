@@ -197,9 +197,9 @@ a {
 .know-more-btn {
   background-color: #d11b1b;
   border-radius: 30px;
-  font-size: 36px;
+  font-size: 32px;
   color: #cccccc;
-  padding: 10px 40px;
+  padding: 10px 35px 17px 35px;
   position: absolute;
   bottom: -20px;
   -webkit-animation-name: know-more-btn;
@@ -319,7 +319,7 @@ a {
   border-radius: 30px;
   font-size: 36px;
   color: #cccccc;
-  padding: 10px 40px;
+  padding: 10px 35px 17px 35px;
   position: absolute;
   bottom: -20px;
   -webkit-animation-name: steps-btn;
@@ -482,7 +482,7 @@ nav a::before {
   border-radius: 30px;
   font-size: 26px;
   color: #cccccc;
-  padding: 10px 40px;
+  padding: 10px 35px 13px 35px;
   position: absolute;
   bottom: 1%;
   right: 4%;
